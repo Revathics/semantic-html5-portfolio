@@ -1,0 +1,108 @@
+/* =========================================================
+FILE: style.css
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #222222;
+}
+
+/* ACCESSIBILITY */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.skip-link:focus {
+  left: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 20px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 50px 0;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+.btn,
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+button:hover,
+.btn:focus,
+button:focus {
+  opacity: 0.9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #2563eb;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
